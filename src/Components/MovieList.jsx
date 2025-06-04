@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 
 function MovieList(){
-        const [movies, setMovies] = useState([{title: "Inception", year: "2010", category: "Sci-Fi"},
-                                                {title: "The Godfather", year: "1972", category: "Crime"},
-                                                {title: "The Dark Knight", year: "2008", category: "Action"},
-                                                {title: "Pulp Fiction", year: "1994", category: "Drama"},
-                                                {title: "Forrest Gump", year: "1994", category: "Romance"},
+        const [movies, setMovies] = useState([{title: "SkyScrapper", year: "2017", category: "Action"},
+                                                {title: "Fear Street:Prom Queen", year: "2025", category: "Horror"},
+                                                {title: "A widow's game", year: "2025", category: "Mystery"},
+                                                {title: "PayCheck", year: "2025", category:"Sci-Fi"},
+                                                {title: "Exterritorial", year: "2025", category: "Thriller"},
                                             
                                             ]); 
         const [movieTitle, setMovieTitle] = useState("");
@@ -38,11 +38,11 @@ function MovieList(){
             
             <>
             <h1>Movies</h1>
-          <div className='movie-list'>
+          <div >
             <div className='movie-form'>
-              <input type="text" placeholder="Enter Movie Title" value={movieTitle.title} onChange={changeTitle}/><br />
-              <input type="number" placeholder="Enter year of release" value={movieYear.year} onChange={changeYear} /><br />
-              <input type="text" placeholder="Enter category" value={movieCategory.category} onChange={changeCategory}/><br />
+              <input className='bg-gray-500 w-24' type="text" placeholder="Enter Movie Title" value={movieTitle.title} onChange={changeTitle}/><br />
+              <input className='bg-gray-500' type="number" placeholder="Enter year of release" value={movieYear.year} onChange={changeYear} /><br />
+              <input className='bg-gray-500'type="text" placeholder="Enter category" value={movieCategory.category} onChange={changeCategory}/><br />
               <button onClick={addMovie}>Add movie</button>
             </div>
             <div className='movie-list-display'>
