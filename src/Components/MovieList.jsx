@@ -43,21 +43,21 @@ function MovieList(){
                   <h1 className="text-center text-5xl font-bold italic mb-8">Movies</h1>
                   <div className="flex flex-col items-center mb-8 space-y-4">
                     <input
-                      className="bg-gray-700 w-full rounded-lg px-5 py-3 focus:outline-none focus:ring-2 focus:ring-red-500"
+                      className="bg-gray-700 w-full rounded-lg px-5 py-3"
                       type="text"
                       placeholder="Enter Movie Title"
                       value={movieTitle}
                       onChange={changeTitle}
                     />
                     <input
-                      className="bg-gray-700 w-full rounded-lg px-5 py-3 focus:outline-none focus:ring-2 focus:ring-red-500"
+                      className="bg-gray-700 w-full rounded-lg px-5 py-3 "
                       type="number"
                       placeholder="Enter year of release"
                       value={movieYear}
                       onChange={changeYear}
                     />
                     <select
-                      className="bg-gray-700 w-full rounded-lg px-5 py-3 focus:outline-none focus:ring-2 focus:ring-red-500"
+                      className="bg-gray-700 w-full rounded-lg px-5 py-3 "
                       value={movieCategory}
                       onChange={changeCategory}
                     >
